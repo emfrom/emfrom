@@ -5,8 +5,6 @@
 “Open-source is just a state of mind—and a decent disassembler.
 Software freedom is another matter.”
 
-_Me, almost sober_
-
 Working on sailing around the world. 
   
 Best way to reach me: <vertlaforet@protonmail.com>
