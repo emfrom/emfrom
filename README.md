@@ -2,9 +2,15 @@
 - 👀 I’m interested in ez80, microcontrollers and bare-metal work
 - 🌱 I’m currently learning more LISP/Scheme
 
+“Open-source is just a state of mind—and a decent disassembler.
+Software freedom is another matter.”
+- Me, almost sober
+
 Working on sailing around the world. 
   
 Best way to reach me: <vertlaforet@protonmail.com>
+
+
 
 Cheers !
 
