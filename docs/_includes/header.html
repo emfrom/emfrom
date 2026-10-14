@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <span class="wordmark-mark" aria-hidden="true">ee</span>
+      <span>{{ site.title }}</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label | escape }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

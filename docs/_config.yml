@@ -1,0 +1,29 @@
+title: Encore Envie
+description: Personal notes and writing by Em From.
+url: https://encoreenvie.eu
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: /writing/:year/:month/:day/:title/
+
+collections: {}
+
+plugins: []
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: E.M. From
+      permalink: /writing/:year/:month/:day/:title/
