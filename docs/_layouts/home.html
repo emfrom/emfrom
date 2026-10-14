@@ -2,16 +2,40 @@
 layout: default
 ---
 <section class="home-hero">
-  <p class="eyebrow">A personal corner of the internet</p>
-  <h1>{{ site.data.profile.name | escape }}<span class="title-period">.</span></h1>
-  <p class="hero-copy">{{ site.data.profile.intro | escape }}</p>
-  <a class="text-link" href="{{ '/about/' | relative_url }}">A little more about me <span aria-hidden="true">↗</span></a>
+  <div class="hero-text">
+    <p class="eyebrow">Personal site <span aria-hidden="true">/</span> field notes</p>
+    <h1>{{ site.data.profile.name | escape }}<span class="title-period">.</span></h1>
+    <p class="hero-copy">{{ site.data.profile.intro | escape }}</p>
+    <div class="hero-links">
+      <a class="button-link" href="{{ '/writing/' | relative_url }}">Read the writing <span aria-hidden="true">↗</span></a>
+      <a class="quiet-link" href="{{ '/about/' | relative_url }}">A little about me</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="art-caption"><span>FIELD NOTES</span><span>01 — ∞</span></div>
+    <svg class="route-art" viewBox="0 0 520 460" role="presentation" xmlns="http://www.w3.org/2000/svg">
+      <path class="contour" d="M-20 80C80 10 112 140 205 76s140-22 192 12 90 20 145-18M-20 132c100-70 132 60 225-4s140-22 192 12 90 20 145-18M-20 184c100-70 132 60 225-4s140-22 192 12 90 20 145-18M-20 236c100-70 132 60 225-4s140-22 192 12 90 20 145-18M-20 288c100-70 132 60 225-4s140-22 192 12 90 20 145-18"/>
+      <circle class="sun" cx="362" cy="148" r="84"/>
+      <circle class="orbit" cx="362" cy="148" r="118"/>
+      <path class="route" d="M95 337c53-4 66-78 126-78s66 57 126 39 67-76 111-72"/>
+      <circle class="route-point" cx="95" cy="337" r="7"/>
+      <circle class="route-point" cx="458" cy="226" r="7"/>
+      <path class="sail" d="m243 325 47-118 4 118zm58 0 42-91 2 91z"/>
+      <path class="boat" d="M225 333h140l-23 29h-91z"/>
+      <path class="wave" d="M201 383c21-12 39 12 60 0s39 12 60 0 39 12 60 0 39 12 60 0M220 403c21-12 39 12 60 0s39 12 60 0 39 12 60 0"/>
+      <path class="compass" d="m115 102 6 20 20 6-20 6-6 20-6-20-20-6 20-6z"/>
+      <circle class="star" cx="435" cy="83" r="3"/>
+      <circle class="star" cx="173" cy="196" r="2.5"/>
+      <circle class="star" cx="405" cy="347" r="2.5"/>
+    </svg>
+    <p class="art-note">Curiosity is a kind of compass.</p>
+  </div>
 </section>
 
 <section class="home-section interests-section" aria-labelledby="interests-heading">
   <div class="section-heading">
     <p class="eyebrow">Currently curious about</p>
-    <h2 id="interests-heading">Things on my mind</h2>
+    <h2 id="interests-heading">Things on my mind<span class="title-period">.</span></h2>
   </div>
   <ul class="interest-list">
     {% for interest in site.data.profile.interests %}
@@ -24,7 +48,7 @@ layout: default
   <div class="section-heading section-heading-row">
     <div>
       <p class="eyebrow">Field notes &amp; longer thoughts</p>
-      <h2 id="writing-heading">Recent writing</h2>
+      <h2 id="writing-heading">Recent writing<span class="title-period">.</span></h2>
     </div>
     <a class="text-link" href="{{ '/writing/' | relative_url }}">All writing <span aria-hidden="true">→</span></a>
   </div>

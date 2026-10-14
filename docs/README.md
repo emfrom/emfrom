@@ -7,7 +7,7 @@ This site is generated from files in `docs/` with Jekyll. Edit the source files,
 - Edit `_config.yml` for the title, description, language, and post URL pattern.
 - Edit `_data/profile.yml` for the name, introduction, interests, and links.
 - Edit `_data/navigation.yml` to add, remove, rename, or reorder menu links. Each item has a `label` and a site-relative `url`.
-- Edit `index.md`, `about.md`, and `writing.md` for page content.
+- Edit `index.md` and `writing.md` for page content. The shared About/Profile Markdown lives in `_includes/about-content.md`; the repository-root `README.md` is a symlink to that file, so one edit updates both.
 - Edit `assets/css/site.css` to change the visual design.
 
 The navigation, profile details, and post archive are rendered from those source files; there is no runtime server or client-side JavaScript.
