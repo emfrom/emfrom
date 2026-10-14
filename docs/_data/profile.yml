@@ -2,10 +2,10 @@ name: E.M. From
 site_name: encore en vie
 intro: A personal home for things I make, things I’m learning, and writing I want to keep.
 interests:
-  - ez80 and microcontrollers
-  - bare-metal software
-  - Lisp and Scheme
-  - sailing around the world
+  - ez80 processor
+  - The wild and beautiful world of LLMs
+  - autogenerative software
+  - Sailing around the world
 links:
   - label: GitHub
     url: https://github.com/emfrom
