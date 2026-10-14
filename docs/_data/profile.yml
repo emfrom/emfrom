@@ -1,0 +1,14 @@
+name: E.M. From
+site_name: Encore Envie
+intro: A personal home for things I make, things I’m learning, and writing I want to keep.
+interests:
+  - ez80 and microcontrollers
+  - bare-metal software
+  - Lisp and Scheme
+  - sailing around the world
+quote: “Open-source is just a state of mind—and a decent disassembler. Software freedom is another matter.”
+links:
+  - label: GitHub
+    url: https://github.com/emfrom
+  - label: Email
+    url: mailto:vertlaforet@protonmail.com

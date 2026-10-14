@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Made slowly, with curiosity.</p>
+    <div class="footer-links">
+      {% for link in site.data.profile.links %}
+        <a href="{{ link.url }}">{{ link.label | escape }}</a>
+      {% endfor %}
+    </div>
+    <p class="copyright">© {{ 'now' | date: '%Y' }} {{ site.data.profile.name | escape }}</p>
+  </div>
+</footer>

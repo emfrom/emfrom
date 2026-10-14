@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="article prose">
+  <header class="article-header">
+    <a class="eyebrow back-link" href="{{ '/writing/' | relative_url }}">Writing</a>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %}<span> by {{ page.author | escape }}</span>{% endif %}</p>
+    {% if page.description %}<p class="article-deck">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
